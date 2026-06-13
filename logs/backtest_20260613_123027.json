@@ -1,0 +1,3104 @@
+{
+  "strategy_name": "灵活配置型多因子选股策略",
+  "params": {
+    "backtest_time": "2026-06-13 12:27",
+    "backtest_start": "2005-01-01 09:00:00",
+    "backtest_end": "2025-12-31 15:00:00",
+    "initial_cash": 100000,
+    "commission_ratio": 0.0001,
+    "slippage_ratio": 0.0001,
+    "rebalance_month": 1,
+    "top_n": 20,
+    "filters": {
+      "tot_mv": {
+        "min": 3000000000,
+        "max": null,
+        "source": "base"
+      },
+      "pe_ttm_cut": {
+        "min": 0,
+        "max": 20,
+        "source": "valuation",
+        "direction": "asc"
+      },
+      "roic": {
+        "min": 15,
+        "max": null,
+        "source": "deriv",
+        "direction": "desc"
+      }
+    },
+    "cash_etf_symbol": "SHSE.511990"
+  },
+  "returns": {
+    "initial_cash": 100000,
+    "final_equity": 701896.54,
+    "total_return": 6.018965,
+    "annual_return": null,
+    "sharpe": null,
+    "max_drawdown": null
+  },
+  "rebalances": [
+    {
+      "date": "2005-01-04",
+      "stock_count": 13,
+      "stock_weight": 79.62,
+      "cash_weight": 20.38,
+      "equity": 100000.0,
+      "holdings": [
+        {
+          "symbol": "SHSE.600019",
+          "pe_ttm_cut": 8.5539,
+          "roic": 15.08010095,
+          "buy_price": 6.7,
+          "volume": 700,
+          "amount": 4690.0
+        },
+        {
+          "symbol": "SHSE.600104",
+          "pe_ttm_cut": 8.736,
+          "roic": 15.68539032,
+          "buy_price": 13.92,
+          "volume": 300,
+          "amount": 4176.0
+        },
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 7.6823,
+          "roic": 27.78952346,
+          "buy_price": 13.31,
+          "volume": 300,
+          "amount": 3993.0
+        },
+        {
+          "symbol": "SHSE.600231",
+          "pe_ttm_cut": 7.71,
+          "roic": 15.54874232,
+          "buy_price": 10.45,
+          "volume": 400,
+          "amount": 4180.0
+        },
+        {
+          "symbol": "SHSE.600307",
+          "pe_ttm_cut": 5.4366,
+          "roic": 16.24806779,
+          "buy_price": 6.99,
+          "volume": 700,
+          "amount": 4893.0
+        },
+        {
+          "symbol": "SHSE.600500",
+          "pe_ttm_cut": 9.3983,
+          "roic": 28.04651658,
+          "buy_price": 21.97,
+          "volume": 200,
+          "amount": 4394.0
+        },
+        {
+          "symbol": "SHSE.600583",
+          "pe_ttm_cut": 17.2485,
+          "roic": 17.23790808,
+          "buy_price": 25.59,
+          "volume": 100,
+          "amount": 2559.0
+        },
+        {
+          "symbol": "SHSE.600786",
+          "pe_ttm_cut": 14.5499,
+          "roic": 53.13944022,
+          "buy_price": 25.95,
+          "volume": 100,
+          "amount": 2595.0
+        },
+        {
+          "symbol": "SZSE.000039",
+          "pe_ttm_cut": 11.7123,
+          "roic": 20.34085834,
+          "buy_price": 151.82,
+          "volume": 100,
+          "amount": 15182.0
+        },
+        {
+          "symbol": "SZSE.000157",
+          "pe_ttm_cut": 8.8069,
+          "roic": 16.35891563,
+          "buy_price": 24.63,
+          "volume": 200,
+          "amount": 4926.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.5146,
+          "roic": 28.31146988,
+          "buy_price": 10.59,
+          "volume": 400,
+          "amount": 4236.0
+        },
+        {
+          "symbol": "SZSE.000933",
+          "pe_ttm_cut": 12.2205,
+          "roic": 16.22751485,
+          "buy_price": 16.25,
+          "volume": 300,
+          "amount": 4875.0
+        },
+        {
+          "symbol": "SZSE.200039",
+          "pe_ttm_cut": 8.8649,
+          "roic": 20.34085834,
+          "buy_price": 129.11,
+          "volume": 100,
+          "amount": 12911.0
+        }
+      ]
+    },
+    {
+      "date": "2006-01-04",
+      "stock_count": 17,
+      "stock_weight": 49.64,
+      "cash_weight": 50.36,
+      "equity": 92452.0,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 10.3055,
+          "roic": 20.99924778,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SHSE.600231",
+          "pe_ttm_cut": 7.71,
+          "roic": 15.54874232,
+          "buy_price": 10.45,
+          "volume": 400,
+          "amount": 4180.0
+        },
+        {
+          "symbol": "SHSE.600500",
+          "pe_ttm_cut": 8.5811,
+          "roic": 17.33584879,
+          "buy_price": 19.68,
+          "volume": 300,
+          "amount": 5904.0
+        },
+        {
+          "symbol": "SHSE.600786",
+          "pe_ttm_cut": 8.9394,
+          "roic": 56.32737835,
+          "buy_price": 27.1,
+          "volume": 200,
+          "amount": 5420.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SZSE.000933",
+          "pe_ttm_cut": 12.2205,
+          "roic": 16.22751485,
+          "buy_price": 16.25,
+          "volume": 300,
+          "amount": 4875.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SHSE.600005",
+          "pe_ttm_cut": 3.9238,
+          "roic": 16.88672341,
+          "buy_price": 8.32,
+          "volume": 500,
+          "amount": 4160.0
+        },
+        {
+          "symbol": "SHSE.600026",
+          "pe_ttm_cut": 7.199,
+          "roic": 18.4190039,
+          "buy_price": 5.89,
+          "volume": 700,
+          "amount": 4123.0
+        },
+        {
+          "symbol": "SHSE.600123",
+          "pe_ttm_cut": 10.0547,
+          "roic": 18.3564037,
+          "buy_price": 18.26,
+          "volume": 200,
+          "amount": 3652.0
+        },
+        {
+          "symbol": "SHSE.600428",
+          "pe_ttm_cut": 6.1804,
+          "roic": 20.9742576,
+          "buy_price": 13.31,
+          "volume": 300,
+          "amount": 3993.0
+        },
+        {
+          "symbol": "SHSE.600627",
+          "pe_ttm_cut": 15.1338,
+          "roic": 20.76950005,
+          "buy_price": 19.2,
+          "volume": 200,
+          "amount": 3840.0
+        },
+        {
+          "symbol": "SZSE.000022",
+          "pe_ttm_cut": 13.124,
+          "roic": 15.76705225,
+          "buy_price": 31.62,
+          "volume": 100,
+          "amount": 3162.0
+        },
+        {
+          "symbol": "SZSE.000937",
+          "pe_ttm_cut": 6.4397,
+          "roic": 16.24268608,
+          "buy_price": 9.21,
+          "volume": 500,
+          "amount": 4605.0
+        },
+        {
+          "symbol": "SZSE.001872",
+          "pe_ttm_cut": 13.124,
+          "roic": 15.76705225,
+          "buy_price": 31.62,
+          "volume": 100,
+          "amount": 3162.0
+        },
+        {
+          "symbol": "SZSE.200022",
+          "pe_ttm_cut": 11.0384,
+          "roic": 15.76705225,
+          "buy_price": 32.44,
+          "volume": 100,
+          "amount": 3244.0
+        },
+        {
+          "symbol": "SZSE.201872",
+          "pe_ttm_cut": 11.0384,
+          "roic": 15.76705225,
+          "buy_price": 32.55,
+          "volume": 100,
+          "amount": 3255.0
+        }
+      ]
+    },
+    {
+      "date": "2007-01-04",
+      "stock_count": 15,
+      "stock_weight": 28.12,
+      "cash_weight": 71.88,
+      "equity": 135463.04,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SHSE.600786",
+          "pe_ttm_cut": 8.9394,
+          "roic": 56.32737835,
+          "buy_price": 27.1,
+          "volume": 200,
+          "amount": 5420.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SHSE.600026",
+          "pe_ttm_cut": 13.5496,
+          "roic": 15.02683351,
+          "buy_price": 5.89,
+          "volume": 600,
+          "amount": 3534.0
+        },
+        {
+          "symbol": "SHSE.600123",
+          "pe_ttm_cut": 15.2111,
+          "roic": 18.22362254,
+          "buy_price": 23.28,
+          "volume": 300,
+          "amount": 6984.0
+        },
+        {
+          "symbol": "SHSE.600150",
+          "pe_ttm_cut": 10.317,
+          "roic": 72.19235657,
+          "buy_price": 34.36,
+          "volume": 100,
+          "amount": 3436.0
+        },
+        {
+          "symbol": "SHSE.600348",
+          "pe_ttm_cut": 11.8659,
+          "roic": 15.99092127,
+          "buy_price": 16.62,
+          "volume": 400,
+          "amount": 6648.0
+        },
+        {
+          "symbol": "SHSE.600362",
+          "pe_ttm_cut": 6.9442,
+          "roic": 26.98084638,
+          "buy_price": 12.26,
+          "volume": 500,
+          "amount": 6130.0
+        },
+        {
+          "symbol": "SHSE.600497",
+          "pe_ttm_cut": 15.5419,
+          "roic": 29.99576744,
+          "buy_price": 56.74,
+          "volume": 100,
+          "amount": 5674.0
+        },
+        {
+          "symbol": "SHSE.601666",
+          "pe_ttm_cut": 11.8201,
+          "roic": 20.00055428,
+          "buy_price": 11.45,
+          "volume": 500,
+          "amount": 5725.0
+        },
+        {
+          "symbol": "SHSE.601699",
+          "pe_ttm_cut": 12.8562,
+          "roic": 22.03984876,
+          "buy_price": 16.15,
+          "volume": 400,
+          "amount": 6460.0
+        },
+        {
+          "symbol": "SZSE.000060",
+          "pe_ttm_cut": 11.4268,
+          "roic": 18.36650716,
+          "buy_price": 93.71,
+          "volume": 100,
+          "amount": 9371.0
+        },
+        {
+          "symbol": "SZSE.000088",
+          "pe_ttm_cut": 14.7956,
+          "roic": 16.68793195,
+          "buy_price": 25.77,
+          "volume": 200,
+          "amount": 5154.0
+        },
+        {
+          "symbol": "SZSE.000550",
+          "pe_ttm_cut": 18.3969,
+          "roic": 17.20837257,
+          "buy_price": 17.59,
+          "volume": 300,
+          "amount": 5277.0
+        },
+        {
+          "symbol": "SZSE.000898",
+          "pe_ttm_cut": 11.4065,
+          "roic": 19.26979239,
+          "buy_price": 14.26,
+          "volume": 400,
+          "amount": 5704.0
+        },
+        {
+          "symbol": "SZSE.200550",
+          "pe_ttm_cut": 13.216,
+          "roic": 17.20837257,
+          "buy_price": 11.61,
+          "volume": 500,
+          "amount": 5805.0
+        },
+        {
+          "symbol": "SZSE.200771",
+          "pe_ttm_cut": 9.8786,
+          "roic": 29.71154,
+          "buy_price": 22.38,
+          "volume": 300,
+          "amount": 6714.0
+        }
+      ]
+    },
+    {
+      "date": "2008-01-02",
+      "stock_count": 6,
+      "stock_weight": 52.07,
+      "cash_weight": 47.93,
+      "equity": 347433.05,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SHSE.600362",
+          "pe_ttm_cut": 6.0114,
+          "roic": 15.15986856,
+          "buy_price": 12.26,
+          "volume": 300,
+          "amount": 3678.0
+        },
+        {
+          "symbol": "SZSE.200550",
+          "pe_ttm_cut": 13.2496,
+          "roic": 18.01605134,
+          "buy_price": 12.96,
+          "volume": 1200,
+          "amount": 15552.0
+        },
+        {
+          "symbol": "SZSE.200771",
+          "pe_ttm_cut": 15.6092,
+          "roic": 20.62171377,
+          "buy_price": 26.94,
+          "volume": 400,
+          "amount": 10776.0
+        },
+        {
+          "symbol": "SZSE.000534",
+          "pe_ttm_cut": 13.1005,
+          "roic": 28.19393301,
+          "buy_price": 37.39,
+          "volume": 400,
+          "amount": 14956.0
+        },
+        {
+          "symbol": "SZSE.000623",
+          "pe_ttm_cut": 16.9325,
+          "roic": 50.16374212,
+          "buy_price": 599.21,
+          "volume": 100,
+          "amount": 59921.0
+        },
+        {
+          "symbol": "SZSE.200513",
+          "pe_ttm_cut": 13.8518,
+          "roic": 19.67141271,
+          "buy_price": 38.35,
+          "volume": 400,
+          "amount": 15340.0
+        }
+      ]
+    },
+    {
+      "date": "2009-01-05",
+      "stock_count": 20,
+      "stock_weight": 37.96,
+      "cash_weight": 62.04,
+      "equity": 249476.78,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SZSE.200550",
+          "pe_ttm_cut": 5.2154,
+          "roic": 16.92766379,
+          "buy_price": 9.64,
+          "volume": 2200,
+          "amount": 21208.0
+        },
+        {
+          "symbol": "SHSE.600596",
+          "pe_ttm_cut": 5.5531,
+          "roic": 58.68960301,
+          "buy_price": 78.25,
+          "volume": 100,
+          "amount": 7825.0
+        },
+        {
+          "symbol": "SZSE.000937",
+          "pe_ttm_cut": 5.8143,
+          "roic": 34.32417395,
+          "buy_price": 29.17,
+          "volume": 400,
+          "amount": 11668.0
+        },
+        {
+          "symbol": "SHSE.600428",
+          "pe_ttm_cut": 5.1643,
+          "roic": 27.0017208,
+          "buy_price": 28.22,
+          "volume": 400,
+          "amount": 11288.0
+        },
+        {
+          "symbol": "SZSE.002001",
+          "pe_ttm_cut": 6.7198,
+          "roic": 46.84829552,
+          "buy_price": 82.29,
+          "volume": 100,
+          "amount": 8229.0
+        },
+        {
+          "symbol": "SHSE.600188",
+          "pe_ttm_cut": 5.464,
+          "roic": 28.21343988,
+          "buy_price": 16.07,
+          "volume": 700,
+          "amount": 11249.0
+        },
+        {
+          "symbol": "SZSE.000968",
+          "pe_ttm_cut": 6.1251,
+          "roic": 29.58672857,
+          "buy_price": 14.05,
+          "volume": 800,
+          "amount": 11240.0
+        },
+        {
+          "symbol": "SHSE.601699",
+          "pe_ttm_cut": 7.3444,
+          "roic": 33.20442317,
+          "buy_price": 24.09,
+          "volume": 500,
+          "amount": 12045.0
+        },
+        {
+          "symbol": "SZSE.000338",
+          "pe_ttm_cut": 5.5392,
+          "roic": 21.9766579,
+          "buy_price": 30.95,
+          "volume": 400,
+          "amount": 12380.0
+        },
+        {
+          "symbol": "SHSE.601666",
+          "pe_ttm_cut": 5.7118,
+          "roic": 23.1787521,
+          "buy_price": 13.8,
+          "volume": 900,
+          "amount": 12420.0
+        },
+        {
+          "symbol": "SHSE.600026",
+          "pe_ttm_cut": 5.1493,
+          "roic": 19.18006974,
+          "buy_price": 9.56,
+          "volume": 1300,
+          "amount": 12428.0
+        },
+        {
+          "symbol": "SZSE.000655",
+          "pe_ttm_cut": 7.8064,
+          "roic": 30.06212734,
+          "buy_price": 35.0,
+          "volume": 300,
+          "amount": 10500.0
+        },
+        {
+          "symbol": "SHSE.601919",
+          "pe_ttm_cut": 6.3391,
+          "roic": 25.82041836,
+          "buy_price": 7.92,
+          "volume": 1500,
+          "amount": 11880.0
+        },
+        {
+          "symbol": "SHSE.601958",
+          "pe_ttm_cut": 8.5502,
+          "roic": 31.31975877,
+          "buy_price": 10.5,
+          "volume": 1100,
+          "amount": 11550.0
+        },
+        {
+          "symbol": "SHSE.600216",
+          "pe_ttm_cut": 8.4862,
+          "roic": 29.48037052,
+          "buy_price": 29.62,
+          "volume": 400,
+          "amount": 11848.0
+        },
+        {
+          "symbol": "SHSE.601001",
+          "pe_ttm_cut": 6.8091,
+          "roic": 22.04210231,
+          "buy_price": 12.02,
+          "volume": 1000,
+          "amount": 12020.0
+        },
+        {
+          "symbol": "SHSE.600395",
+          "pe_ttm_cut": 13.1888,
+          "roic": 31.62928417,
+          "buy_price": 21.42,
+          "volume": 500,
+          "amount": 10710.0
+        },
+        {
+          "symbol": "SHSE.600508",
+          "pe_ttm_cut": 6.9227,
+          "roic": 21.37211578,
+          "buy_price": 20.14,
+          "volume": 600,
+          "amount": 12084.0
+        },
+        {
+          "symbol": "SHSE.600123",
+          "pe_ttm_cut": 6.5266,
+          "roic": 18.6627568,
+          "buy_price": 29.9,
+          "volume": 400,
+          "amount": 11960.0
+        }
+      ]
+    },
+    {
+      "date": "2010-01-04",
+      "stock_count": 3,
+      "stock_weight": 13.09,
+      "cash_weight": 86.91,
+      "equity": 617016.28,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SZSE.200550",
+          "pe_ttm_cut": 11.1912,
+          "roic": 17.67214817,
+          "buy_price": 9.64,
+          "volume": 1700,
+          "amount": 16388.0
+        },
+        {
+          "symbol": "SHSE.601699",
+          "pe_ttm_cut": 7.3444,
+          "roic": 33.20442317,
+          "buy_price": 24.09,
+          "volume": 500,
+          "amount": 12045.0
+        },
+        {
+          "symbol": "SHSE.600216",
+          "pe_ttm_cut": 16.7098,
+          "roic": 26.59773932,
+          "buy_price": 38.12,
+          "volume": 500,
+          "amount": 19060.0
+        },
+        {
+          "symbol": "SZSE.200771",
+          "pe_ttm_cut": 8.919,
+          "roic": 15.49543513,
+          "buy_price": 40.46,
+          "volume": 700,
+          "amount": 28322.0
+        }
+      ]
+    },
+    {
+      "date": "2011-01-04",
+      "stock_count": 15,
+      "stock_weight": 89.39,
+      "cash_weight": 10.61,
+      "equity": 653097.94,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SZSE.200550",
+          "pe_ttm_cut": 9.6623,
+          "roic": 26.91657594,
+          "buy_price": 9.64,
+          "volume": 1000,
+          "amount": 9640.0
+        },
+        {
+          "symbol": "SHSE.600216",
+          "pe_ttm_cut": 10.7747,
+          "roic": 26.0704861,
+          "buy_price": 38.12,
+          "volume": 400,
+          "amount": 15248.0
+        },
+        {
+          "symbol": "SHSE.600166",
+          "pe_ttm_cut": 13.5837,
+          "roic": 17.40955687,
+          "buy_price": 108.18,
+          "volume": 300,
+          "amount": 32454.0
+        },
+        {
+          "symbol": "SHSE.600508",
+          "pe_ttm_cut": 15.3561,
+          "roic": 17.18740459,
+          "buy_price": 62.72,
+          "volume": 500,
+          "amount": 31360.0
+        },
+        {
+          "symbol": "SHSE.600660",
+          "pe_ttm_cut": 10.2924,
+          "roic": 17.22474277,
+          "buy_price": 450.96,
+          "volume": 100,
+          "amount": 45096.0
+        },
+        {
+          "symbol": "SHSE.600742",
+          "pe_ttm_cut": 11.4911,
+          "roic": 19.27818696,
+          "buy_price": 102.75,
+          "volume": 300,
+          "amount": 30825.0
+        },
+        {
+          "symbol": "SHSE.900948",
+          "pe_ttm_cut": 13.8304,
+          "roic": 20.19159321,
+          "buy_price": 40.59,
+          "volume": 800,
+          "amount": 32472.0
+        },
+        {
+          "symbol": "SZSE.000338",
+          "pe_ttm_cut": 15.6146,
+          "roic": 23.41752581,
+          "buy_price": 175.2,
+          "volume": 100,
+          "amount": 17520.0
+        },
+        {
+          "symbol": "SZSE.000527",
+          "pe_ttm_cut": 18.4307,
+          "roic": 23.77896462,
+          "buy_price": 573.84,
+          "volume": 100,
+          "amount": 57384.0
+        },
+        {
+          "symbol": "SZSE.000528",
+          "pe_ttm_cut": 16.1257,
+          "roic": 15.06749921,
+          "buy_price": 125.9,
+          "volume": 200,
+          "amount": 25180.0
+        },
+        {
+          "symbol": "SZSE.000550",
+          "pe_ttm_cut": 13.5711,
+          "roic": 26.91657594,
+          "buy_price": 39.92,
+          "volume": 800,
+          "amount": 31936.0
+        },
+        {
+          "symbol": "SZSE.000708",
+          "pe_ttm_cut": 13.1892,
+          "roic": 15.59400875,
+          "buy_price": 24.78,
+          "volume": 1300,
+          "amount": 32214.0
+        },
+        {
+          "symbol": "SZSE.000800",
+          "pe_ttm_cut": 11.3322,
+          "roic": 19.66021123,
+          "buy_price": 28.91,
+          "volume": 1100,
+          "amount": 31801.0
+        },
+        {
+          "symbol": "SZSE.002001",
+          "pe_ttm_cut": 15.8259,
+          "roic": 18.16319823,
+          "buy_price": 165.45,
+          "volume": 100,
+          "amount": 16545.0
+        },
+        {
+          "symbol": "SZSE.200581",
+          "pe_ttm_cut": 16.5083,
+          "roic": 15.49813584,
+          "buy_price": 69.86,
+          "volume": 400,
+          "amount": 27944.0
+        }
+      ]
+    },
+    {
+      "date": "2012-01-04",
+      "stock_count": 20,
+      "stock_weight": 95.79,
+      "cash_weight": 4.21,
+      "equity": 500370.2,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SZSE.200550",
+          "pe_ttm_cut": 5.9009,
+          "roic": 22.57359393,
+          "buy_price": 10.75,
+          "volume": 1100,
+          "amount": 11825.0
+        },
+        {
+          "symbol": "SHSE.600216",
+          "pe_ttm_cut": 7.9932,
+          "roic": 19.95056763,
+          "buy_price": 38.88,
+          "volume": 500,
+          "amount": 19440.0
+        },
+        {
+          "symbol": "SHSE.900948",
+          "pe_ttm_cut": 7.9583,
+          "roic": 19.7634607,
+          "buy_price": 39.26,
+          "volume": 900,
+          "amount": 35334.0
+        },
+        {
+          "symbol": "SZSE.000338",
+          "pe_ttm_cut": 7.998,
+          "roic": 15.89618278,
+          "buy_price": 137.93,
+          "volume": 200,
+          "amount": 27586.0
+        },
+        {
+          "symbol": "SZSE.000550",
+          "pe_ttm_cut": 10.1041,
+          "roic": 22.57359393,
+          "buy_price": 38.78,
+          "volume": 900,
+          "amount": 34902.0
+        },
+        {
+          "symbol": "SZSE.200581",
+          "pe_ttm_cut": 5.6421,
+          "roic": 16.67337926,
+          "buy_price": 65.64,
+          "volume": 500,
+          "amount": 32820.0
+        },
+        {
+          "symbol": "SHSE.600160",
+          "pe_ttm_cut": 9.5358,
+          "roic": 34.1475241,
+          "buy_price": 57.61,
+          "volume": 400,
+          "amount": 23044.0
+        },
+        {
+          "symbol": "SHSE.600970",
+          "pe_ttm_cut": 9.2301,
+          "roic": 23.29781106,
+          "buy_price": 71.06,
+          "volume": 300,
+          "amount": 21318.0
+        },
+        {
+          "symbol": "SHSE.600636",
+          "pe_ttm_cut": 10.4643,
+          "roic": 32.69158025,
+          "buy_price": 180.84,
+          "volume": 100,
+          "amount": 18084.0
+        },
+        {
+          "symbol": "SZSE.002648",
+          "pe_ttm_cut": 10.7766,
+          "roic": 39.72298879,
+          "buy_price": 35.98,
+          "volume": 600,
+          "amount": 21588.0
+        },
+        {
+          "symbol": "SZSE.000703",
+          "pe_ttm_cut": 9.7619,
+          "roic": 23.47480178,
+          "buy_price": 54.2,
+          "volume": 400,
+          "amount": 21680.0
+        },
+        {
+          "symbol": "SZSE.000685",
+          "pe_ttm_cut": 6.7072,
+          "roic": 18.65975929,
+          "buy_price": 55.66,
+          "volume": 400,
+          "amount": 22264.0
+        },
+        {
+          "symbol": "SHSE.600031",
+          "pe_ttm_cut": 10.5949,
+          "roic": 24.19986509,
+          "buy_price": 359.04,
+          "volume": 100,
+          "amount": 35904.0
+        },
+        {
+          "symbol": "SHSE.600111",
+          "pe_ttm_cut": 14.0136,
+          "roic": 47.373754,
+          "buy_price": 179.54,
+          "volume": 100,
+          "amount": 17954.0
+        },
+        {
+          "symbol": "SZSE.000011",
+          "pe_ttm_cut": 10.5844,
+          "roic": 18.05456486,
+          "buy_price": 13.51,
+          "volume": 1800,
+          "amount": 24318.0
+        },
+        {
+          "symbol": "SHSE.600585",
+          "pe_ttm_cut": 6.918,
+          "roic": 15.75695124,
+          "buy_price": 49.63,
+          "volume": 400,
+          "amount": 19852.0
+        },
+        {
+          "symbol": "SHSE.600066",
+          "pe_ttm_cut": 11.6135,
+          "roic": 18.52757107,
+          "buy_price": 217.05,
+          "volume": 100,
+          "amount": 21705.0
+        },
+        {
+          "symbol": "SHSE.601100",
+          "pe_ttm_cut": 18.3355,
+          "roic": 28.31460173,
+          "buy_price": 16.0,
+          "volume": 1500,
+          "amount": 24000.0
+        },
+        {
+          "symbol": "SZSE.000568",
+          "pe_ttm_cut": 19.1482,
+          "roic": 33.36800805,
+          "buy_price": 663.47,
+          "volume": 100,
+          "amount": 66347.0
+        }
+      ]
+    },
+    {
+      "date": "2013-01-04",
+      "stock_count": 19,
+      "stock_weight": 94.5,
+      "cash_weight": 5.5,
+      "equity": 532048.18,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SZSE.200550",
+          "pe_ttm_cut": 8.9592,
+          "roic": 15.58838402,
+          "buy_price": 10.75,
+          "volume": 900,
+          "amount": 9675.0
+        },
+        {
+          "symbol": "SHSE.900948",
+          "pe_ttm_cut": 16.576,
+          "roic": 21.54261865,
+          "buy_price": 39.26,
+          "volume": 800,
+          "amount": 31408.0
+        },
+        {
+          "symbol": "SZSE.000550",
+          "pe_ttm_cut": 10.6897,
+          "roic": 15.58838402,
+          "buy_price": 37.71,
+          "volume": 1000,
+          "amount": 37710.0
+        },
+        {
+          "symbol": "SHSE.600066",
+          "pe_ttm_cut": 13.5165,
+          "roic": 15.90169447,
+          "buy_price": 237.47,
+          "volume": 200,
+          "amount": 47494.0
+        },
+        {
+          "symbol": "SHSE.600340",
+          "pe_ttm_cut": 14.5452,
+          "roic": 20.86249481,
+          "buy_price": 112.32,
+          "volume": 200,
+          "amount": 22464.0
+        },
+        {
+          "symbol": "SHSE.600519",
+          "pe_ttm_cut": 16.9349,
+          "roic": 36.92028724,
+          "buy_price": 958.17,
+          "volume": 100,
+          "amount": 95817.0
+        },
+        {
+          "symbol": "SHSE.600690",
+          "pe_ttm_cut": 11.772,
+          "roic": 15.48758214,
+          "buy_price": 192.92,
+          "volume": 100,
+          "amount": 19292.0
+        },
+        {
+          "symbol": "SHSE.600694",
+          "pe_ttm_cut": 13.4061,
+          "roic": 15.17714063,
+          "buy_price": 108.78,
+          "volume": 200,
+          "amount": 21756.0
+        },
+        {
+          "symbol": "SHSE.601515",
+          "pe_ttm_cut": 14.573,
+          "roic": 20.57064676,
+          "buy_price": 14.86,
+          "volume": 1700,
+          "amount": 25262.0
+        },
+        {
+          "symbol": "SHSE.601633",
+          "pe_ttm_cut": 15.0029,
+          "roic": 16.89066912,
+          "buy_price": 22.63,
+          "volume": 1100,
+          "amount": 24893.0
+        },
+        {
+          "symbol": "SHSE.601717",
+          "pe_ttm_cut": 11.0785,
+          "roic": 15.8853526,
+          "buy_price": 20.77,
+          "volume": 1200,
+          "amount": 24924.0
+        },
+        {
+          "symbol": "SZSE.000537",
+          "pe_ttm_cut": 11.2319,
+          "roic": 18.00112098,
+          "buy_price": 25.81,
+          "volume": 1000,
+          "amount": 25810.0
+        },
+        {
+          "symbol": "SZSE.000858",
+          "pe_ttm_cut": 11.545,
+          "roic": 29.84794538,
+          "buy_price": 346.82,
+          "volume": 100,
+          "amount": 34682.0
+        },
+        {
+          "symbol": "SZSE.000869",
+          "pe_ttm_cut": 18.6118,
+          "roic": 22.0908407,
+          "buy_price": 148.22,
+          "volume": 100,
+          "amount": 14822.0
+        },
+        {
+          "symbol": "SZSE.002242",
+          "pe_ttm_cut": 12.3059,
+          "roic": 15.18156927,
+          "buy_price": 23.35,
+          "volume": 1100,
+          "amount": 25685.0
+        },
+        {
+          "symbol": "SZSE.002304",
+          "pe_ttm_cut": 17.2766,
+          "roic": 40.78307648,
+          "buy_price": 226.77,
+          "volume": 100,
+          "amount": 22677.0
+        },
+        {
+          "symbol": "SZSE.200596",
+          "pe_ttm_cut": 15.0112,
+          "roic": 17.12822395,
+          "buy_price": 72.17,
+          "volume": 300,
+          "amount": 21651.0
+        }
+      ]
+    },
+    {
+      "date": "2014-01-02",
+      "stock_count": 20,
+      "stock_weight": 79.52,
+      "cash_weight": 20.48,
+      "equity": 545715.13,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SHSE.600694",
+          "pe_ttm_cut": 7.7462,
+          "roic": 15.32593299,
+          "buy_price": 104.74,
+          "volume": 300,
+          "amount": 31422.0
+        },
+        {
+          "symbol": "SHSE.601633",
+          "pe_ttm_cut": 16.8118,
+          "roic": 21.86281953,
+          "buy_price": 22.63,
+          "volume": 600,
+          "amount": 13578.0
+        },
+        {
+          "symbol": "SZSE.000858",
+          "pe_ttm_cut": 6.2556,
+          "roic": 21.28251661,
+          "buy_price": 272.15,
+          "volume": 200,
+          "amount": 54430.0
+        },
+        {
+          "symbol": "SZSE.002304",
+          "pe_ttm_cut": 7.6748,
+          "roic": 25.92747173,
+          "buy_price": 164.95,
+          "volume": 200,
+          "amount": 32990.0
+        },
+        {
+          "symbol": "SHSE.600067",
+          "pe_ttm_cut": 9.7093,
+          "roic": 18.61865401,
+          "buy_price": 117.95,
+          "volume": 200,
+          "amount": 23590.0
+        },
+        {
+          "symbol": "SHSE.600197",
+          "pe_ttm_cut": 17.2704,
+          "roic": 16.70928213,
+          "buy_price": 28.05,
+          "volume": 900,
+          "amount": 25245.0
+        },
+        {
+          "symbol": "SHSE.600658",
+          "pe_ttm_cut": 8.5754,
+          "roic": 19.82310119,
+          "buy_price": 34.93,
+          "volume": 700,
+          "amount": 24451.0
+        },
+        {
+          "symbol": "SHSE.600809",
+          "pe_ttm_cut": 13.1432,
+          "roic": 30.10223921,
+          "buy_price": 58.04,
+          "volume": 400,
+          "amount": 23216.0
+        },
+        {
+          "symbol": "SHSE.600988",
+          "pe_ttm_cut": 15.974,
+          "roic": 18.37903902,
+          "buy_price": 14.19,
+          "volume": 1900,
+          "amount": 26961.0
+        },
+        {
+          "symbol": "SHSE.601877",
+          "pe_ttm_cut": 17.7276,
+          "roic": 16.41034756,
+          "buy_price": 28.34,
+          "volume": 900,
+          "amount": 25506.0
+        },
+        {
+          "symbol": "SZSE.000011",
+          "pe_ttm_cut": 8.8487,
+          "roic": 17.20165283,
+          "buy_price": 18.35,
+          "volume": 1400,
+          "amount": 25690.0
+        },
+        {
+          "symbol": "SZSE.000030",
+          "pe_ttm_cut": 14.9801,
+          "roic": 17.29894007,
+          "buy_price": 8.51,
+          "volume": 3100,
+          "amount": 26381.0
+        },
+        {
+          "symbol": "SZSE.000568",
+          "pe_ttm_cut": 7.2105,
+          "roic": 26.4537278,
+          "buy_price": 411.4,
+          "volume": 100,
+          "amount": 41140.0
+        },
+        {
+          "symbol": "SZSE.000584",
+          "pe_ttm_cut": 9.3284,
+          "roic": 17.45790645,
+          "buy_price": 21.98,
+          "volume": 1200,
+          "amount": 26376.0
+        },
+        {
+          "symbol": "SZSE.000651",
+          "pe_ttm_cut": 11.7943,
+          "roic": 16.89185834,
+          "buy_price": 1479.02,
+          "volume": 100,
+          "amount": 147902.0
+        }
+      ]
+    },
+    {
+      "date": "2015-01-05",
+      "stock_count": 20,
+      "stock_weight": 79.59,
+      "cash_weight": 20.41,
+      "equity": 702409.23,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SHSE.600694",
+          "pe_ttm_cut": 11.8796,
+          "roic": 15.70895422,
+          "buy_price": 104.74,
+          "volume": 200,
+          "amount": 20948.0
+        },
+        {
+          "symbol": "SHSE.601633",
+          "pe_ttm_cut": 18.3564,
+          "roic": 16.11865795,
+          "buy_price": 26.06,
+          "volume": 700,
+          "amount": 18242.0
+        },
+        {
+          "symbol": "SHSE.600658",
+          "pe_ttm_cut": 16.7095,
+          "roic": 15.03189801,
+          "buy_price": 35.48,
+          "volume": 900,
+          "amount": 31932.0
+        },
+        {
+          "symbol": "SHSE.601877",
+          "pe_ttm_cut": 19.2863,
+          "roic": 18.23429967,
+          "buy_price": 29.3,
+          "volume": 1000,
+          "amount": 29300.0
+        },
+        {
+          "symbol": "SZSE.000584",
+          "pe_ttm_cut": 9.3284,
+          "roic": 17.45790645,
+          "buy_price": 21.98,
+          "volume": 1200,
+          "amount": 26376.0
+        },
+        {
+          "symbol": "SHSE.600519",
+          "pe_ttm_cut": 15.4943,
+          "roic": 21.76779782,
+          "buy_price": 1086.63,
+          "volume": 100,
+          "amount": 108663.0
+        },
+        {
+          "symbol": "SHSE.600674",
+          "pe_ttm_cut": 16.3185,
+          "roic": 15.85163513,
+          "buy_price": 135.19,
+          "volume": 200,
+          "amount": 27038.0
+        },
+        {
+          "symbol": "SHSE.601515",
+          "pe_ttm_cut": 17.852,
+          "roic": 17.29250674,
+          "buy_price": 24.61,
+          "volume": 1400,
+          "amount": 34454.0
+        },
+        {
+          "symbol": "SZSE.000062",
+          "pe_ttm_cut": 14.1862,
+          "roic": 15.69406416,
+          "buy_price": 56.72,
+          "volume": 600,
+          "amount": 34032.0
+        },
+        {
+          "symbol": "SZSE.000333",
+          "pe_ttm_cut": 13.4171,
+          "roic": 16.58881933,
+          "buy_price": 77.96,
+          "volume": 400,
+          "amount": 31184.0
+        },
+        {
+          "symbol": "SZSE.000550",
+          "pe_ttm_cut": 18.401,
+          "roic": 15.90618778,
+          "buy_price": 55.89,
+          "volume": 600,
+          "amount": 33534.0
+        },
+        {
+          "symbol": "SZSE.000553",
+          "pe_ttm_cut": 14.8132,
+          "roic": 17.01648649,
+          "buy_price": 43.36,
+          "volume": 800,
+          "amount": 34688.0
+        },
+        {
+          "symbol": "SZSE.000895",
+          "pe_ttm_cut": 18.4964,
+          "roic": 21.47722111,
+          "buy_price": 274.04,
+          "volume": 100,
+          "amount": 27404.0
+        },
+        {
+          "symbol": "SZSE.000921",
+          "pe_ttm_cut": 16.604,
+          "roic": 15.18752972,
+          "buy_price": 8.71,
+          "volume": 4200,
+          "amount": 36582.0
+        },
+        {
+          "symbol": "SZSE.002035",
+          "pe_ttm_cut": 19.6618,
+          "roic": 15.00465255,
+          "buy_price": 58.33,
+          "volume": 600,
+          "amount": 34998.0
+        },
+        {
+          "symbol": "SZSE.002344",
+          "pe_ttm_cut": 19.374,
+          "roic": 18.17541828,
+          "buy_price": 68.39,
+          "volume": 500,
+          "amount": 34195.0
+        },
+        {
+          "symbol": "SZSE.002440",
+          "pe_ttm_cut": 11.9737,
+          "roic": 16.07751508,
+          "buy_price": 52.52,
+          "volume": 700,
+          "amount": 36764.0
+        },
+        {
+          "symbol": "SZSE.200550",
+          "pe_ttm_cut": 13.9287,
+          "roic": 15.90618778,
+          "buy_price": 55.82,
+          "volume": 600,
+          "amount": 33492.0
+        },
+        {
+          "symbol": "SZSE.200553",
+          "pe_ttm_cut": 7.6975,
+          "roic": 17.01648649,
+          "buy_price": 22.77,
+          "volume": 1600,
+          "amount": 36432.0
+        }
+      ]
+    },
+    {
+      "date": "2016-01-04",
+      "stock_count": 11,
+      "stock_weight": 66.88,
+      "cash_weight": 33.12,
+      "equity": 854288.08,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SHSE.600694",
+          "pe_ttm_cut": 11.8796,
+          "roic": 15.70895422,
+          "buy_price": 104.74,
+          "volume": 200,
+          "amount": 20948.0
+        },
+        {
+          "symbol": "SHSE.601633",
+          "pe_ttm_cut": 12.2605,
+          "roic": 15.19058945,
+          "buy_price": 26.06,
+          "volume": 700,
+          "amount": 18242.0
+        },
+        {
+          "symbol": "SHSE.600658",
+          "pe_ttm_cut": 16.7095,
+          "roic": 15.03189801,
+          "buy_price": 35.48,
+          "volume": 900,
+          "amount": 31932.0
+        },
+        {
+          "symbol": "SHSE.601877",
+          "pe_ttm_cut": 17.9487,
+          "roic": 15.23681766,
+          "buy_price": 29.3,
+          "volume": 1000,
+          "amount": 29300.0
+        },
+        {
+          "symbol": "SZSE.000584",
+          "pe_ttm_cut": 9.3284,
+          "roic": 17.45790645,
+          "buy_price": 21.98,
+          "volume": 1200,
+          "amount": 26376.0
+        },
+        {
+          "symbol": "SHSE.601515",
+          "pe_ttm_cut": 17.852,
+          "roic": 17.29250674,
+          "buy_price": 24.61,
+          "volume": 1400,
+          "amount": 34454.0
+        },
+        {
+          "symbol": "SZSE.000062",
+          "pe_ttm_cut": 14.1862,
+          "roic": 15.69406416,
+          "buy_price": 56.72,
+          "volume": 600,
+          "amount": 34032.0
+        },
+        {
+          "symbol": "SZSE.000333",
+          "pe_ttm_cut": 12.3999,
+          "roic": 16.09866839,
+          "buy_price": 78.31,
+          "volume": 500,
+          "amount": 39155.0
+        },
+        {
+          "symbol": "SZSE.000550",
+          "pe_ttm_cut": 18.401,
+          "roic": 15.90618778,
+          "buy_price": 55.89,
+          "volume": 600,
+          "amount": 33534.0
+        },
+        {
+          "symbol": "SZSE.000553",
+          "pe_ttm_cut": 14.8132,
+          "roic": 17.01648649,
+          "buy_price": 43.36,
+          "volume": 800,
+          "amount": 34688.0
+        },
+        {
+          "symbol": "SZSE.000895",
+          "pe_ttm_cut": 17.218,
+          "roic": 19.13869717,
+          "buy_price": 259.64,
+          "volume": 200,
+          "amount": 51928.0
+        },
+        {
+          "symbol": "SZSE.000921",
+          "pe_ttm_cut": 16.604,
+          "roic": 15.18752972,
+          "buy_price": 8.71,
+          "volume": 4200,
+          "amount": 36582.0
+        },
+        {
+          "symbol": "SZSE.002035",
+          "pe_ttm_cut": 19.6618,
+          "roic": 15.00465255,
+          "buy_price": 58.33,
+          "volume": 600,
+          "amount": 34998.0
+        },
+        {
+          "symbol": "SZSE.002344",
+          "pe_ttm_cut": 19.374,
+          "roic": 18.17541828,
+          "buy_price": 68.39,
+          "volume": 500,
+          "amount": 34195.0
+        },
+        {
+          "symbol": "SZSE.002440",
+          "pe_ttm_cut": 11.9737,
+          "roic": 16.07751508,
+          "buy_price": 52.52,
+          "volume": 700,
+          "amount": 36764.0
+        },
+        {
+          "symbol": "SZSE.200553",
+          "pe_ttm_cut": 7.6975,
+          "roic": 17.01648649,
+          "buy_price": 22.77,
+          "volume": 1600,
+          "amount": 36432.0
+        },
+        {
+          "symbol": "SZSE.002304",
+          "pe_ttm_cut": 19.9858,
+          "roic": 19.54608299,
+          "buy_price": 237.29,
+          "volume": 100,
+          "amount": 23729.0
+        }
+      ]
+    },
+    {
+      "date": "2017-01-03",
+      "stock_count": 9,
+      "stock_weight": 53.29,
+      "cash_weight": 46.71,
+      "equity": 847699.42,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SHSE.601633",
+          "pe_ttm_cut": 11.452,
+          "roic": 15.50402252,
+          "buy_price": 29.95,
+          "volume": 1100,
+          "amount": 32945.0
+        },
+        {
+          "symbol": "SZSE.000584",
+          "pe_ttm_cut": 9.3284,
+          "roic": 17.45790645,
+          "buy_price": 21.98,
+          "volume": 1200,
+          "amount": 26376.0
+        },
+        {
+          "symbol": "SZSE.000333",
+          "pe_ttm_cut": 13.6608,
+          "roic": 15.6802953,
+          "buy_price": 78.31,
+          "volume": 300,
+          "amount": 23493.0
+        },
+        {
+          "symbol": "SZSE.000895",
+          "pe_ttm_cut": 16.9899,
+          "roic": 19.56141092,
+          "buy_price": 259.64,
+          "volume": 100,
+          "amount": 25964.0
+        },
+        {
+          "symbol": "SZSE.002440",
+          "pe_ttm_cut": 11.9737,
+          "roic": 16.07751508,
+          "buy_price": 52.52,
+          "volume": 700,
+          "amount": 36764.0
+        },
+        {
+          "symbol": "SHSE.600398",
+          "pe_ttm_cut": 15.9783,
+          "roic": 22.94347725,
+          "buy_price": 58.31,
+          "volume": 700,
+          "amount": 40817.0
+        },
+        {
+          "symbol": "SHSE.600688",
+          "pe_ttm_cut": 14.0352,
+          "roic": 18.15803443,
+          "buy_price": 14.49,
+          "volume": 2900,
+          "amount": 42021.0
+        },
+        {
+          "symbol": "SZSE.000150",
+          "pe_ttm_cut": 13.3269,
+          "roic": 25.387632,
+          "buy_price": 55.39,
+          "volume": 700,
+          "amount": 38773.0
+        },
+        {
+          "symbol": "SZSE.000651",
+          "pe_ttm_cut": 10.5478,
+          "roic": 16.6938845,
+          "buy_price": 2820.66,
+          "volume": 100,
+          "amount": 282066.0
+        },
+        {
+          "symbol": "SZSE.002714",
+          "pe_ttm_cut": 11.7649,
+          "roic": 21.8172798,
+          "buy_price": 94.81,
+          "volume": 400,
+          "amount": 37924.0
+        },
+        {
+          "symbol": "SZSE.300498",
+          "pe_ttm_cut": 12.5653,
+          "roic": 38.84464773,
+          "buy_price": 43.79,
+          "volume": 900,
+          "amount": 39411.0
+        }
+      ]
+    },
+    {
+      "date": "2018-01-02",
+      "stock_count": 16,
+      "stock_weight": 92.51,
+      "cash_weight": 7.49,
+      "equity": 1193983.11,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SHSE.600398",
+          "pe_ttm_cut": 13.8366,
+          "roic": 20.46038575,
+          "buy_price": 57.46,
+          "volume": 1000,
+          "amount": 57460.0
+        },
+        {
+          "symbol": "SHSE.600688",
+          "pe_ttm_cut": 11.9632,
+          "roic": 15.70515657,
+          "buy_price": 14.65,
+          "volume": 3900,
+          "amount": 57135.0
+        },
+        {
+          "symbol": "SHSE.600230",
+          "pe_ttm_cut": 10.1376,
+          "roic": 33.45827805,
+          "buy_price": 49.18,
+          "volume": 1200,
+          "amount": 59016.0
+        },
+        {
+          "symbol": "SHSE.600641",
+          "pe_ttm_cut": 8.8967,
+          "roic": 31.53130077,
+          "buy_price": 190.56,
+          "volume": 300,
+          "amount": 57168.0
+        },
+        {
+          "symbol": "SHSE.603113",
+          "pe_ttm_cut": 19.3782,
+          "roic": 16.83271604,
+          "buy_price": 22.87,
+          "volume": 2600,
+          "amount": 59462.0
+        },
+        {
+          "symbol": "SZSE.000011",
+          "pe_ttm_cut": 10.7782,
+          "roic": 21.36315077,
+          "buy_price": 42.73,
+          "volume": 1400,
+          "amount": 59822.0
+        },
+        {
+          "symbol": "SZSE.000036",
+          "pe_ttm_cut": 5.8285,
+          "roic": 23.19756986,
+          "buy_price": 58.61,
+          "volume": 1000,
+          "amount": 58610.0
+        },
+        {
+          "symbol": "SZSE.000717",
+          "pe_ttm_cut": 12.525,
+          "roic": 17.19250567,
+          "buy_price": 30.86,
+          "volume": 1900,
+          "amount": 58634.0
+        },
+        {
+          "symbol": "SZSE.000822",
+          "pe_ttm_cut": 14.4701,
+          "roic": 20.99307704,
+          "buy_price": 16.32,
+          "volume": 3700,
+          "amount": 60384.0
+        },
+        {
+          "symbol": "SZSE.000921",
+          "pe_ttm_cut": 17.6502,
+          "roic": 15.65195991,
+          "buy_price": 15.01,
+          "volume": 4000,
+          "amount": 60040.0
+        },
+        {
+          "symbol": "SZSE.002110",
+          "pe_ttm_cut": 9.7336,
+          "roic": 22.97355737,
+          "buy_price": 21.98,
+          "volume": 2700,
+          "amount": 59346.0
+        },
+        {
+          "symbol": "SZSE.002468",
+          "pe_ttm_cut": 17.0573,
+          "roic": 18.69457978,
+          "buy_price": 54.19,
+          "volume": 1100,
+          "amount": 59609.0
+        },
+        {
+          "symbol": "SZSE.002597",
+          "pe_ttm_cut": 18.3805,
+          "roic": 19.41826912,
+          "buy_price": 120.94,
+          "volume": 500,
+          "amount": 60470.0
+        },
+        {
+          "symbol": "SZSE.200011",
+          "pe_ttm_cut": 4.685,
+          "roic": 21.36315077,
+          "buy_price": 25.92,
+          "volume": 2300,
+          "amount": 59616.0
+        }
+      ]
+    },
+    {
+      "date": "2019-01-02",
+      "stock_count": 20,
+      "stock_weight": 73.45,
+      "cash_weight": 26.55,
+      "equity": 904170.95,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SHSE.600230",
+          "pe_ttm_cut": 4.903,
+          "roic": 29.60908841,
+          "buy_price": 42.35,
+          "volume": 1700,
+          "amount": 71995.0
+        },
+        {
+          "symbol": "SHSE.603113",
+          "pe_ttm_cut": 8.1287,
+          "roic": 18.43104716,
+          "buy_price": 18.73,
+          "volume": 4000,
+          "amount": 74920.0
+        },
+        {
+          "symbol": "SZSE.000717",
+          "pe_ttm_cut": 2.991,
+          "roic": 23.48041723,
+          "buy_price": 25.03,
+          "volume": 3000,
+          "amount": 75090.0
+        },
+        {
+          "symbol": "SZSE.002110",
+          "pe_ttm_cut": 3.43,
+          "roic": 29.90243913,
+          "buy_price": 21.24,
+          "volume": 3000,
+          "amount": 63720.0
+        },
+        {
+          "symbol": "SHSE.600516",
+          "pe_ttm_cut": 5.0343,
+          "roic": 39.45693705,
+          "buy_price": 92.35,
+          "volume": 400,
+          "amount": 36940.0
+        },
+        {
+          "symbol": "SHSE.600507",
+          "pe_ttm_cut": 4.4251,
+          "roic": 33.08424939,
+          "buy_price": 79.58,
+          "volume": 500,
+          "amount": 39790.0
+        },
+        {
+          "symbol": "SZSE.300107",
+          "pe_ttm_cut": 9.5283,
+          "roic": 40.04813071,
+          "buy_price": 78.48,
+          "volume": 500,
+          "amount": 39240.0
+        },
+        {
+          "symbol": "SZSE.002027",
+          "pe_ttm_cut": 13.0448,
+          "roic": 36.29480484,
+          "buy_price": 47.99,
+          "volume": 900,
+          "amount": 43191.0
+        },
+        {
+          "symbol": "SZSE.000629",
+          "pe_ttm_cut": 11.4292,
+          "roic": 23.59502931,
+          "buy_price": 20.19,
+          "volume": 2200,
+          "amount": 44418.0
+        },
+        {
+          "symbol": "SHSE.600338",
+          "pe_ttm_cut": 11.625,
+          "roic": 23.73695185,
+          "buy_price": 20.34,
+          "volume": 2200,
+          "amount": 44748.0
+        },
+        {
+          "symbol": "SHSE.600585",
+          "pe_ttm_cut": 5.8254,
+          "roic": 18.44701356,
+          "buy_price": 111.15,
+          "volume": 400,
+          "amount": 44460.0
+        },
+        {
+          "symbol": "SZSE.000672",
+          "pe_ttm_cut": 5.5284,
+          "roic": 18.40041026,
+          "buy_price": 25.05,
+          "volume": 1700,
+          "amount": 42585.0
+        },
+        {
+          "symbol": "SZSE.300132",
+          "pe_ttm_cut": 13.5515,
+          "roic": 26.80510745,
+          "buy_price": 63.27,
+          "volume": 700,
+          "amount": 44289.0
+        },
+        {
+          "symbol": "SHSE.603260",
+          "pe_ttm_cut": 10.7564,
+          "roic": 18.92545759,
+          "buy_price": 43.61,
+          "volume": 1000,
+          "amount": 43610.0
+        },
+        {
+          "symbol": "SZSE.300618",
+          "pe_ttm_cut": 16.6899,
+          "roic": 29.84424659,
+          "buy_price": 116.42,
+          "volume": 300,
+          "amount": 34926.0
+        }
+      ]
+    },
+    {
+      "date": "2020-01-02",
+      "stock_count": 20,
+      "stock_weight": 93.16,
+      "cash_weight": 6.84,
+      "equity": 1025930.99,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SZSE.300107",
+          "pe_ttm_cut": 9.1802,
+          "roic": 16.52160805,
+          "buy_price": 73.06,
+          "volume": 800,
+          "amount": 58448.0
+        },
+        {
+          "symbol": "SHSE.600585",
+          "pe_ttm_cut": 9.0346,
+          "roic": 18.21144688,
+          "buy_price": 111.15,
+          "volume": 200,
+          "amount": 22230.0
+        },
+        {
+          "symbol": "SZSE.000672",
+          "pe_ttm_cut": 7.5418,
+          "roic": 26.33143322,
+          "buy_price": 25.05,
+          "volume": 900,
+          "amount": 22545.0
+        },
+        {
+          "symbol": "SZSE.002234",
+          "pe_ttm_cut": 6.5912,
+          "roic": 51.31603795,
+          "buy_price": 67.61,
+          "volume": 700,
+          "amount": 47327.0
+        },
+        {
+          "symbol": "SZSE.002458",
+          "pe_ttm_cut": 9.9154,
+          "roic": 58.80666686,
+          "buy_price": 137.96,
+          "volume": 300,
+          "amount": 41388.0
+        },
+        {
+          "symbol": "SHSE.900933",
+          "pe_ttm_cut": 4.7138,
+          "roic": 19.49476782,
+          "buy_price": 14.65,
+          "volume": 3500,
+          "amount": 51275.0
+        },
+        {
+          "symbol": "SZSE.002299",
+          "pe_ttm_cut": 8.9236,
+          "roic": 21.54396915,
+          "buy_price": 54.74,
+          "volume": 900,
+          "amount": 49266.0
+        },
+        {
+          "symbol": "SZSE.002746",
+          "pe_ttm_cut": 9.4786,
+          "roic": 22.35137899,
+          "buy_price": 42.65,
+          "volume": 1200,
+          "amount": 51180.0
+        },
+        {
+          "symbol": "SZSE.002755",
+          "pe_ttm_cut": 12.6057,
+          "roic": 28.12238661,
+          "buy_price": 27.75,
+          "volume": 1800,
+          "amount": 49950.0
+        },
+        {
+          "symbol": "SHSE.600801",
+          "pe_ttm_cut": 8.6178,
+          "roic": 19.49476782,
+          "buy_price": 188.86,
+          "volume": 200,
+          "amount": 37772.0
+        },
+        {
+          "symbol": "SZSE.300761",
+          "pe_ttm_cut": 15.9414,
+          "roic": 24.5240064,
+          "buy_price": 61.08,
+          "volume": 800,
+          "amount": 48864.0
+        },
+        {
+          "symbol": "SHSE.600566",
+          "pe_ttm_cut": 12.3213,
+          "roic": 20.57721355,
+          "buy_price": 36.67,
+          "volume": 1400,
+          "amount": 51338.0
+        },
+        {
+          "symbol": "SZSE.000048",
+          "pe_ttm_cut": 15.8837,
+          "roic": 20.736753,
+          "buy_price": 99.04,
+          "volume": 500,
+          "amount": 49520.0
+        },
+        {
+          "symbol": "SZSE.000789",
+          "pe_ttm_cut": 8.0238,
+          "roic": 15.91555691,
+          "buy_price": 52.48,
+          "volume": 900,
+          "amount": 47232.0
+        },
+        {
+          "symbol": "SZSE.200596",
+          "pe_ttm_cut": 15.9117,
+          "roic": 20.40104229,
+          "buy_price": 223.16,
+          "volume": 200,
+          "amount": 44632.0
+        },
+        {
+          "symbol": "SZSE.002016",
+          "pe_ttm_cut": 7.4578,
+          "roic": 15.27579301,
+          "buy_price": 43.52,
+          "volume": 1100,
+          "amount": 47872.0
+        },
+        {
+          "symbol": "SZSE.002963",
+          "pe_ttm_cut": 18.7745,
+          "roic": 22.14016759,
+          "buy_price": 34.38,
+          "volume": 1500,
+          "amount": 51570.0
+        },
+        {
+          "symbol": "SZSE.300702",
+          "pe_ttm_cut": 17.7641,
+          "roic": 20.03889327,
+          "buy_price": 75.94,
+          "volume": 600,
+          "amount": 45564.0
+        },
+        {
+          "symbol": "SHSE.600995",
+          "pe_ttm_cut": 10.8653,
+          "roic": 15.65696184,
+          "buy_price": 52.19,
+          "volume": 900,
+          "amount": 46971.0
+        },
+        {
+          "symbol": "SHSE.600668",
+          "pe_ttm_cut": 9.3079,
+          "roic": 15.27657373,
+          "buy_price": 77.04,
+          "volume": 600,
+          "amount": 46224.0
+        }
+      ]
+    },
+    {
+      "date": "2021-01-04",
+      "stock_count": 20,
+      "stock_weight": 84.78,
+      "cash_weight": 15.22,
+      "equity": 988460.77,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SZSE.000672",
+          "pe_ttm_cut": 7.9443,
+          "roic": 20.13078105,
+          "buy_price": 25.05,
+          "volume": 800,
+          "amount": 20040.0
+        },
+        {
+          "symbol": "SHSE.603301",
+          "pe_ttm_cut": 6.855,
+          "roic": 65.35012071,
+          "buy_price": 127.9,
+          "volume": 300,
+          "amount": 38370.0
+        },
+        {
+          "symbol": "SZSE.300677",
+          "pe_ttm_cut": 12.945,
+          "roic": 95.92155972,
+          "buy_price": 494.09,
+          "volume": 100,
+          "amount": 49409.0
+        },
+        {
+          "symbol": "SZSE.002869",
+          "pe_ttm_cut": 6.1467,
+          "roic": 20.60546222,
+          "buy_price": 52.66,
+          "volume": 900,
+          "amount": 47394.0
+        },
+        {
+          "symbol": "SZSE.300552",
+          "pe_ttm_cut": 7.6776,
+          "roic": 25.43539394,
+          "buy_price": 88.05,
+          "volume": 500,
+          "amount": 44025.0
+        },
+        {
+          "symbol": "SZSE.002932",
+          "pe_ttm_cut": 12.8202,
+          "roic": 41.6523701,
+          "buy_price": 64.62,
+          "volume": 700,
+          "amount": 45234.0
+        },
+        {
+          "symbol": "SZSE.300418",
+          "pe_ttm_cut": 14.984,
+          "roic": 45.8038397,
+          "buy_price": 79.13,
+          "volume": 600,
+          "amount": 47478.0
+        },
+        {
+          "symbol": "SZSE.300246",
+          "pe_ttm_cut": 12.2559,
+          "roic": 33.65863485,
+          "buy_price": 99.89,
+          "volume": 500,
+          "amount": 49945.0
+        },
+        {
+          "symbol": "SZSE.300888",
+          "pe_ttm_cut": 17.1313,
+          "roic": 46.05653328,
+          "buy_price": 167.62,
+          "volume": 300,
+          "amount": 50286.0
+        },
+        {
+          "symbol": "SZSE.002838",
+          "pe_ttm_cut": 13.5696,
+          "roic": 41.71979808,
+          "buy_price": 125.95,
+          "volume": 400,
+          "amount": 50380.0
+        },
+        {
+          "symbol": "SHSE.600720",
+          "pe_ttm_cut": 6.6223,
+          "roic": 16.48795236,
+          "buy_price": 123.07,
+          "volume": 400,
+          "amount": 49228.0
+        },
+        {
+          "symbol": "SZSE.002980",
+          "pe_ttm_cut": 15.0679,
+          "roic": 44.13974903,
+          "buy_price": 46.44,
+          "volume": 1000,
+          "amount": 46440.0
+        },
+        {
+          "symbol": "SZSE.002950",
+          "pe_ttm_cut": 13.33,
+          "roic": 29.59960283,
+          "buy_price": 31.46,
+          "volume": 1600,
+          "amount": 50336.0
+        },
+        {
+          "symbol": "SZSE.300206",
+          "pe_ttm_cut": 16.8107,
+          "roic": 39.54019151,
+          "buy_price": 115.38,
+          "volume": 400,
+          "amount": 46152.0
+        },
+        {
+          "symbol": "SHSE.688399",
+          "pe_ttm_cut": 19.2451,
+          "roic": 46.02652698,
+          "buy_price": 193.68,
+          "volume": 261,
+          "amount": 50550.48
+        },
+        {
+          "symbol": "SHSE.601975",
+          "pe_ttm_cut": 9.7466,
+          "roic": 17.6995016,
+          "buy_price": 2.51,
+          "volume": 20100,
+          "amount": 50451.0
+        }
+      ]
+    },
+    {
+      "date": "2022-01-04",
+      "stock_count": 20,
+      "stock_weight": 145.07,
+      "cash_weight": 0.0,
+      "equity": 879254.47,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SZSE.300677",
+          "pe_ttm_cut": 3.3328,
+          "roic": 53.7480853,
+          "buy_price": 382.6,
+          "volume": 200,
+          "amount": 76520.0
+        },
+        {
+          "symbol": "SZSE.002932",
+          "pe_ttm_cut": 6.9245,
+          "roic": 63.72355225,
+          "buy_price": 64.62,
+          "volume": 400,
+          "amount": 25848.0
+        },
+        {
+          "symbol": "SHSE.688399",
+          "pe_ttm_cut": 6.5382,
+          "roic": 46.96814041,
+          "buy_price": 170.78,
+          "volume": 461,
+          "amount": 78729.58
+        },
+        {
+          "symbol": "SHSE.688068",
+          "pe_ttm_cut": 4.5316,
+          "roic": 102.17686052,
+          "buy_price": 117.42,
+          "volume": 375,
+          "amount": 44032.5
+        },
+        {
+          "symbol": "SZSE.300981",
+          "pe_ttm_cut": 4.0603,
+          "roic": 48.69543418,
+          "buy_price": 81.95,
+          "volume": 500,
+          "amount": 40975.0
+        },
+        {
+          "symbol": "SHSE.688298",
+          "pe_ttm_cut": 5.7755,
+          "roic": 94.34473027,
+          "buy_price": 240.51,
+          "volume": 200,
+          "amount": 48102.0
+        },
+        {
+          "symbol": "SHSE.601919",
+          "pe_ttm_cut": 4.2744,
+          "roic": 38.95658381,
+          "buy_price": 26.5,
+          "volume": 1600,
+          "amount": 42400.0
+        },
+        {
+          "symbol": "SHSE.688767",
+          "pe_ttm_cut": 7.6952,
+          "roic": 58.35955192,
+          "buy_price": 68.86,
+          "volume": 640,
+          "amount": 44070.4
+        },
+        {
+          "symbol": "SHSE.600746",
+          "pe_ttm_cut": 6.9759,
+          "roic": 47.55459739,
+          "buy_price": 78.94,
+          "volume": 500,
+          "amount": 39470.0
+        },
+        {
+          "symbol": "SZSE.002064",
+          "pe_ttm_cut": 6.8961,
+          "roic": 31.86725265,
+          "buy_price": 118.97,
+          "volume": 300,
+          "amount": 35691.0
+        },
+        {
+          "symbol": "SZSE.002030",
+          "pe_ttm_cut": 8.4916,
+          "roic": 44.65565231,
+          "buy_price": 366.05,
+          "volume": 100,
+          "amount": 36605.0
+        },
+        {
+          "symbol": "SHSE.688289",
+          "pe_ttm_cut": 10.2011,
+          "roic": 31.47553871,
+          "buy_price": 61.23,
+          "volume": 720,
+          "amount": 44085.6
+        },
+        {
+          "symbol": "SZSE.002274",
+          "pe_ttm_cut": 7.8472,
+          "roic": 25.36306886,
+          "buy_price": 40.85,
+          "volume": 1000,
+          "amount": 40850.0
+        },
+        {
+          "symbol": "SHSE.600955",
+          "pe_ttm_cut": 10.2947,
+          "roic": 30.9089314,
+          "buy_price": 45.36,
+          "volume": 900,
+          "amount": 40824.0
+        },
+        {
+          "symbol": "SHSE.688606",
+          "pe_ttm_cut": 8.6428,
+          "roic": 24.29533532,
+          "buy_price": 124.69,
+          "volume": 353,
+          "amount": 44015.57
+        },
+        {
+          "symbol": "SHSE.601636",
+          "pe_ttm_cut": 10.5238,
+          "roic": 27.06785677,
+          "buy_price": 55.01,
+          "volume": 800,
+          "amount": 44008.0
+        },
+        {
+          "symbol": "SHSE.601156",
+          "pe_ttm_cut": 10.846,
+          "roic": 29.95583178,
+          "buy_price": 21.44,
+          "volume": 2000,
+          "amount": 42880.0
+        },
+        {
+          "symbol": "SZSE.002382",
+          "pe_ttm_cut": 7.7589,
+          "roic": 21.19185765,
+          "buy_price": 109.16,
+          "volume": 400,
+          "amount": 43664.0
+        },
+        {
+          "symbol": "SZSE.000923",
+          "pe_ttm_cut": 5.6684,
+          "roic": 16.58026617,
+          "buy_price": 15.24,
+          "volume": 2800,
+          "amount": 42672.0
+        },
+        {
+          "symbol": "SHSE.600426",
+          "pe_ttm_cut": 10.6779,
+          "roic": 27.02942118,
+          "buy_price": 273.25,
+          "volume": 100,
+          "amount": 27325.0
+        }
+      ]
+    },
+    {
+      "date": "2023-01-03",
+      "stock_count": 0,
+      "stock_weight": 1.56,
+      "cash_weight": 98.44,
+      "equity": 615199.45,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        }
+      ]
+    },
+    {
+      "date": "2024-01-02",
+      "stock_count": 20,
+      "stock_weight": 94.55,
+      "cash_weight": 5.45,
+      "equity": 619146.42,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SZSE.000048",
+          "pe_ttm_cut": 4.4138,
+          "roic": 24.56853509,
+          "buy_price": 125.69,
+          "volume": 200,
+          "amount": 25138.0
+        },
+        {
+          "symbol": "SHSE.603688",
+          "pe_ttm_cut": 6.7752,
+          "roic": 80.74720642,
+          "buy_price": 141.21,
+          "volume": 200,
+          "amount": 28242.0
+        },
+        {
+          "symbol": "SZSE.002756",
+          "pe_ttm_cut": 5.6847,
+          "roic": 24.0355276,
+          "buy_price": 150.52,
+          "volume": 200,
+          "amount": 30104.0
+        },
+        {
+          "symbol": "SHSE.688556",
+          "pe_ttm_cut": 8.7234,
+          "roic": 24.49227353,
+          "buy_price": 76.88,
+          "volume": 402,
+          "amount": 30905.76
+        },
+        {
+          "symbol": "SZSE.000408",
+          "pe_ttm_cut": 9.1645,
+          "roic": 24.1636572,
+          "buy_price": 102.96,
+          "volume": 300,
+          "amount": 30888.0
+        },
+        {
+          "symbol": "SZSE.301004",
+          "pe_ttm_cut": 11.4124,
+          "roic": 30.09530057,
+          "buy_price": 49.2,
+          "volume": 600,
+          "amount": 29520.0
+        },
+        {
+          "symbol": "SZSE.300861",
+          "pe_ttm_cut": 8.9565,
+          "roic": 23.60421272,
+          "buy_price": 40.56,
+          "volume": 700,
+          "amount": 28392.0
+        },
+        {
+          "symbol": "SZSE.000897",
+          "pe_ttm_cut": 5.424,
+          "roic": 20.02167115,
+          "buy_price": 9.31,
+          "volume": 3300,
+          "amount": 30723.0
+        },
+        {
+          "symbol": "SZSE.002865",
+          "pe_ttm_cut": 9.5093,
+          "roic": 21.85192524,
+          "buy_price": 112.63,
+          "volume": 200,
+          "amount": 22526.0
+        },
+        {
+          "symbol": "SZSE.000707",
+          "pe_ttm_cut": 6.5496,
+          "roic": 19.6707743,
+          "buy_price": 19.2,
+          "volume": 1600,
+          "amount": 30720.0
+        },
+        {
+          "symbol": "SZSE.300316",
+          "pe_ttm_cut": 13.5377,
+          "roic": 22.54485022,
+          "buy_price": 396.68,
+          "volume": 100,
+          "amount": 39668.0
+        },
+        {
+          "symbol": "SZSE.001269",
+          "pe_ttm_cut": 14.8155,
+          "roic": 28.54664874,
+          "buy_price": 70.79,
+          "volume": 400,
+          "amount": 28316.0
+        },
+        {
+          "symbol": "SZSE.002738",
+          "pe_ttm_cut": 8.1619,
+          "roic": 17.66959084,
+          "buy_price": 110.41,
+          "volume": 200,
+          "amount": 22082.0
+        },
+        {
+          "symbol": "SHSE.603444",
+          "pe_ttm_cut": 13.4939,
+          "roic": 20.96631213,
+          "buy_price": 304.02,
+          "volume": 100,
+          "amount": 30402.0
+        },
+        {
+          "symbol": "SHSE.600546",
+          "pe_ttm_cut": 6.3357,
+          "roic": 16.79198725,
+          "buy_price": 140.28,
+          "volume": 200,
+          "amount": 28056.0
+        },
+        {
+          "symbol": "SHSE.603360",
+          "pe_ttm_cut": 11.2058,
+          "roic": 17.11180724,
+          "buy_price": 34.97,
+          "volume": 800,
+          "amount": 27976.0
+        },
+        {
+          "symbol": "SZSE.200596",
+          "pe_ttm_cut": 13.1469,
+          "roic": 18.60640228,
+          "buy_price": 395.53,
+          "volume": 100,
+          "amount": 39553.0
+        },
+        {
+          "symbol": "SHSE.603307",
+          "pe_ttm_cut": 13.266,
+          "roic": 18.23805714,
+          "buy_price": 45.16,
+          "volume": 600,
+          "amount": 27096.0
+        },
+        {
+          "symbol": "SZSE.300856",
+          "pe_ttm_cut": 15.317,
+          "roic": 21.37548733,
+          "buy_price": 91.5,
+          "volume": 300,
+          "amount": 27450.0
+        },
+        {
+          "symbol": "SHSE.603279",
+          "pe_ttm_cut": 12.9014,
+          "roic": 17.12816006,
+          "buy_price": 35.05,
+          "volume": 800,
+          "amount": 28040.0
+        }
+      ]
+    },
+    {
+      "date": "2025-01-02",
+      "stock_count": 20,
+      "stock_weight": 84.24,
+      "cash_weight": 15.76,
+      "equity": 629769.55,
+      "holdings": [
+        {
+          "symbol": "SHSE.600205",
+          "pe_ttm_cut": 14.8901,
+          "roic": 23.68457294,
+          "buy_price": 13.31,
+          "volume": 200,
+          "amount": 2662.0
+        },
+        {
+          "symbol": "SZSE.000866",
+          "pe_ttm_cut": 6.0372,
+          "roic": 20.45013157,
+          "buy_price": 10.59,
+          "volume": 300,
+          "amount": 3177.0
+        },
+        {
+          "symbol": "SHSE.600002",
+          "pe_ttm_cut": 7.2656,
+          "roic": 18.64270973,
+          "buy_price": 9.59,
+          "volume": 400,
+          "amount": 3836.0
+        },
+        {
+          "symbol": "SZSE.301004",
+          "pe_ttm_cut": 17.1383,
+          "roic": 34.21869684,
+          "buy_price": 49.2,
+          "volume": 300,
+          "amount": 14760.0
+        },
+        {
+          "symbol": "SZSE.300316",
+          "pe_ttm_cut": 9.9435,
+          "roic": 15.42899092,
+          "buy_price": 396.68,
+          "volume": 100,
+          "amount": 39668.0
+        },
+        {
+          "symbol": "SHSE.603929",
+          "pe_ttm_cut": 11.8952,
+          "roic": 28.3681502,
+          "buy_price": 30.28,
+          "volume": 1000,
+          "amount": 30280.0
+        },
+        {
+          "symbol": "SZSE.000568",
+          "pe_ttm_cut": 12.5258,
+          "roic": 20.89298715,
+          "buy_price": 3335.31,
+          "volume": 100,
+          "amount": 333531.0
+        },
+        {
+          "symbol": "SZSE.300441",
+          "pe_ttm_cut": 15.684,
+          "roic": 28.70600151,
+          "buy_price": 61.77,
+          "volume": 500,
+          "amount": 30885.0
+        },
+        {
+          "symbol": "SHSE.603871",
+          "pe_ttm_cut": 13.9331,
+          "roic": 20.37622072,
+          "buy_price": 222.37,
+          "volume": 100,
+          "amount": 22237.0
+        },
+        {
+          "symbol": "SZSE.300724",
+          "pe_ttm_cut": 9.1587,
+          "roic": 17.94070904,
+          "buy_price": 63.66,
+          "volume": 400,
+          "amount": 25464.0
+        },
+        {
+          "symbol": "SZSE.300641",
+          "pe_ttm_cut": 16.9707,
+          "roic": 33.09903779,
+          "buy_price": 46.45,
+          "volume": 600,
+          "amount": 27870.0
+        },
+        {
+          "symbol": "SHSE.603198",
+          "pe_ttm_cut": 15.9807,
+          "roic": 21.75133174,
+          "buy_price": 66.36,
+          "volume": 400,
+          "amount": 26544.0
+        },
+        {
+          "symbol": "SHSE.601225",
+          "pe_ttm_cut": 10.1735,
+          "roic": 16.56148482,
+          "buy_price": 37.98,
+          "volume": 800,
+          "amount": 30384.0
+        }
+      ]
+    }
+  ]
+}

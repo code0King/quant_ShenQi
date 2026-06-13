@@ -1,0 +1,350 @@
+{
+  "strategy_name": "灵活配置型多因子选股策略",
+  "params": {
+    "backtest_time": "2026-06-13 12:36",
+    "backtest_start": "2005-01-01 09:00:00",
+    "backtest_end": "2025-12-31 15:00:00",
+    "initial_cash": 100000,
+    "commission_ratio": 0.0001,
+    "slippage_ratio": 0.0001,
+    "rebalance_month": 6,
+    "top_n": 20,
+    "filters": {
+      "tot_mv": {
+        "min": 3000000000,
+        "max": null,
+        "source": "base"
+      },
+      "pe_ttm_cut": {
+        "min": 0,
+        "max": 20,
+        "source": "valuation",
+        "direction": "asc"
+      },
+      "roic": {
+        "min": 15,
+        "max": null,
+        "source": "deriv",
+        "direction": "desc"
+      }
+    },
+    "cash_etf_symbol": "SHSE.511990"
+  },
+  "returns": {
+    "initial_cash": 100000,
+    "final_equity": 51657.02,
+    "total_return": -0.48343,
+    "annual_return": null,
+    "sharpe": null,
+    "max_drawdown": null
+  },
+  "rebalances": [
+    {
+      "date": "2005-06-01",
+      "stock_count": 1,
+      "stock_weight": 3.97,
+      "cash_weight": 96.03,
+      "equity": 100000.0,
+      "holdings": [
+        {
+          "symbol": "SHSE.600786",
+          "pe_ttm_cut": 7.9487,
+          "roic": 23.13361355,
+          "buy_price": 21.14,
+          "volume": 200,
+          "amount": 4228.0
+        }
+      ]
+    },
+    {
+      "date": "2006-06-01",
+      "stock_count": 0,
+      "stock_weight": 0.0,
+      "cash_weight": 100.0,
+      "equity": 106549.52,
+      "holdings": []
+    },
+    {
+      "date": "2007-06-01",
+      "stock_count": 0,
+      "stock_weight": 0.0,
+      "cash_weight": 100.0,
+      "equity": 106657.53,
+      "holdings": []
+    },
+    {
+      "date": "2008-06-02",
+      "stock_count": 2,
+      "stock_weight": 17.77,
+      "cash_weight": 82.23,
+      "equity": 106657.53,
+      "holdings": [
+        {
+          "symbol": "SHSE.601958",
+          "pe_ttm_cut": 17.1374,
+          "roic": 25.79085762,
+          "buy_price": 22.4,
+          "volume": 200,
+          "amount": 4480.0
+        },
+        {
+          "symbol": "SZSE.000609",
+          "pe_ttm_cut": 17.8639,
+          "roic": 36.25285155,
+          "buy_price": 129.34,
+          "volume": 100,
+          "amount": 12934.0
+        }
+      ]
+    },
+    {
+      "date": "2009-06-01",
+      "stock_count": 0,
+      "stock_weight": 0.0,
+      "cash_weight": 100.0,
+      "equity": 97994.43,
+      "holdings": []
+    },
+    {
+      "date": "2010-06-01",
+      "stock_count": 0,
+      "stock_weight": 0.0,
+      "cash_weight": 100.0,
+      "equity": 98389.07,
+      "holdings": []
+    },
+    {
+      "date": "2011-06-01",
+      "stock_count": 3,
+      "stock_weight": 12.3,
+      "cash_weight": 87.7,
+      "equity": 98389.07,
+      "holdings": [
+        {
+          "symbol": "SHSE.601233",
+          "pe_ttm_cut": 11.7691,
+          "roic": 29.88651286,
+          "buy_price": 25.2,
+          "volume": 100,
+          "amount": 2520.0
+        },
+        {
+          "symbol": "SZSE.000011",
+          "pe_ttm_cut": 14.3207,
+          "roic": 16.89934674,
+          "buy_price": 24.55,
+          "volume": 200,
+          "amount": 4910.0
+        },
+        {
+          "symbol": "SZSE.200011",
+          "pe_ttm_cut": 6.494,
+          "roic": 16.89934674,
+          "buy_price": 14.53,
+          "volume": 300,
+          "amount": 4359.0
+        }
+      ]
+    },
+    {
+      "date": "2012-06-01",
+      "stock_count": 1,
+      "stock_weight": 103.04,
+      "cash_weight": 0.0,
+      "equity": 95839.72,
+      "holdings": [
+        {
+          "symbol": "SZSE.000568",
+          "pe_ttm_cut": 17.0946,
+          "roic": 15.5476367,
+          "buy_price": 743.24,
+          "volume": 100,
+          "amount": 74324.0
+        }
+      ]
+    },
+    {
+      "date": "2013-06-03",
+      "stock_count": 1,
+      "stock_weight": 12.16,
+      "cash_weight": 87.84,
+      "equity": 72133.04,
+      "holdings": [
+        {
+          "symbol": "SHSE.600809",
+          "pe_ttm_cut": 16.0011,
+          "roic": 18.51905929,
+          "buy_price": 82.46,
+          "volume": 100,
+          "amount": 8246.0
+        }
+      ]
+    },
+    {
+      "date": "2014-06-03",
+      "stock_count": 0,
+      "stock_weight": 0.0,
+      "cash_weight": 100.0,
+      "equity": 67831.68,
+      "holdings": []
+    },
+    {
+      "date": "2015-06-01",
+      "stock_count": 0,
+      "stock_weight": 0.0,
+      "cash_weight": 100.0,
+      "equity": 67803.88,
+      "holdings": []
+    },
+    {
+      "date": "2016-06-01",
+      "stock_count": 1,
+      "stock_weight": 7.23,
+      "cash_weight": 92.77,
+      "equity": 67827.88,
+      "holdings": [
+        {
+          "symbol": "SZSE.000150",
+          "pe_ttm_cut": 12.0192,
+          "roic": 26.40741937,
+          "buy_price": 48.85,
+          "volume": 100,
+          "amount": 4885.0
+        }
+      ]
+    },
+    {
+      "date": "2017-06-01",
+      "stock_count": 2,
+      "stock_weight": 3.88,
+      "cash_weight": 96.12,
+      "equity": 67589.59,
+      "holdings": [
+        {
+          "symbol": "SHSE.600230",
+          "pe_ttm_cut": 8.3207,
+          "roic": 15.29203419,
+          "buy_price": 26.85,
+          "volume": 100,
+          "amount": 2685.0
+        }
+      ]
+    },
+    {
+      "date": "2018-06-01",
+      "stock_count": 1,
+      "stock_weight": 0.0,
+      "cash_weight": 100.0,
+      "equity": 69157.26,
+      "holdings": []
+    },
+    {
+      "date": "2019-06-03",
+      "stock_count": 2,
+      "stock_weight": 8.43,
+      "cash_weight": 91.57,
+      "equity": 69140.32,
+      "holdings": [
+        {
+          "symbol": "SZSE.002234",
+          "pe_ttm_cut": 10.8328,
+          "roic": 17.75866789,
+          "buy_price": 57.33,
+          "volume": 100,
+          "amount": 5733.0
+        }
+      ]
+    },
+    {
+      "date": "2020-06-01",
+      "stock_count": 0,
+      "stock_weight": 0.0,
+      "cash_weight": 100.0,
+      "equity": 68022.5,
+      "holdings": []
+    },
+    {
+      "date": "2021-06-01",
+      "stock_count": 8,
+      "stock_weight": 8.81,
+      "cash_weight": 91.19,
+      "equity": 68125.51,
+      "holdings": [
+        {
+          "symbol": "SZSE.001201",
+          "pe_ttm_cut": 11.0546,
+          "roic": 61.64853082,
+          "buy_price": 59.71,
+          "volume": 100,
+          "amount": 5971.0
+        }
+      ]
+    },
+    {
+      "date": "2022-06-01",
+      "stock_count": 14,
+      "stock_weight": 47.48,
+      "cash_weight": 52.52,
+      "equity": 67805.17,
+      "holdings": [
+        {
+          "symbol": "SHSE.600389",
+          "pe_ttm_cut": 13.6768,
+          "roic": 15.02612346,
+          "buy_price": 152.75,
+          "volume": 100,
+          "amount": 15275.0
+        },
+        {
+          "symbol": "SHSE.688303",
+          "pe_ttm_cut": 12.2392,
+          "roic": 22.93294006,
+          "buy_price": 60.59,
+          "volume": 200,
+          "amount": 12118.0
+        }
+      ]
+    },
+    {
+      "date": "2023-06-01",
+      "stock_count": 2,
+      "stock_weight": 41.35,
+      "cash_weight": 58.65,
+      "equity": 57690.47,
+      "holdings": [
+        {
+          "symbol": "SZSE.000048",
+          "pe_ttm_cut": 4.6265,
+          "roic": 23.68380589,
+          "buy_price": 139.85,
+          "volume": 100,
+          "amount": 13985.0
+        },
+        {
+          "symbol": "SZSE.301089",
+          "pe_ttm_cut": 16.9575,
+          "roic": 18.74293069,
+          "buy_price": 74.94,
+          "volume": 100,
+          "amount": 7494.0
+        }
+      ]
+    },
+    {
+      "date": "2024-06-03",
+      "stock_count": 1,
+      "stock_weight": 0.0,
+      "cash_weight": 100.0,
+      "equity": 51940.07,
+      "holdings": []
+    },
+    {
+      "date": "2025-06-03",
+      "stock_count": 1,
+      "stock_weight": 0.0,
+      "cash_weight": 100.0,
+      "equity": 51663.22,
+      "holdings": []
+    }
+  ]
+}
