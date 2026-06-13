@@ -133,6 +133,10 @@ class DataManager:
         if os.path.exists(filename):
             try:
                 df = pd.read_csv(filename, compression='gzip')
+                # 缓存完整性校验：记录数少于1000条视为无效缓存（防止诊断模式采样数据污染）
+                if len(df) < 1000:
+                    print(f"[WARN] [缓存校验] {filename} 仅{len(df)}条记录，不足1000条，视为无效缓存，将重新获取")
+                    return None
                 data_list = df.to_dict('records')
                 print(f"[SAVE] [数据加载] 已从 {filename} 加载完整数据 (共{len(data_list)}条)")
                 return data_list
@@ -322,7 +326,8 @@ def fetch_all_stock_data(context, current_date, start_date_query):
             all_deriv = stk_get_finance_deriv_pt(
                 symbols=symbols_to_check,
                 fields=','.join(deriv_req),
-                rpt_type=0,
+                rpt_type=12,          # 固定使用年报数据，避免不同调仓月份ROIC口径不一致
+                data_type=101,        # 合并原始（未经修正的合并报表）
                 date=current_date,
                 df=True
             )
